@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans SYSTEM "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	
+	<bean id="volontaireDao" class="com.sununet.dao.VolontaireDaoSpringJdbcImpl">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	
+	<bean id="demandeurDao" class="com.sununet.dao.DemandeurDaoSpringJdbcImpl">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+
+	<bean id="countryDao" class="com.sununet.dao.CountryDaoJdbcImpl">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+			
+	<bean id="sununetService" class="com.sununet.service.SununetServiceImpl">
+		<property name="volontaireDao" ref="volontaireDao"/>
+		<property name="demandeurDao" ref="demandeurDao"/>
+		<property name="countryDao" ref="countryDao"/>
+	</bean>
+		
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" lazy-init="default" autowire="default" dependency-check="default">
+  		<property name="driverClassName" value="com.mysql.jdbc.Driver" /> 
+  		<property name="url" value="jdbc:mysql://localhost/sununet" /> 
+  		<property name="username" value="root" /> 
+  		<property name="password" value="tete8282" /> 
+  	</bean>	
+
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+	<property name="host" value="smtp.kattare.com"/>
+	</bean>
+	
+	<bean id="emailNotificationService" class="com.sununet.service.EmailNotificationService">
+	  <constructor-arg><ref bean="mailSender"/></constructor-arg>
+	</bean>
+  		
+</beans>

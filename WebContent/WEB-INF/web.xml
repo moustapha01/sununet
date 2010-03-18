@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="2.4"
+         xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+         http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" >
+
+	<!-- le chargeur du contexte spring de l'application -->
+	<listener>
+		<listener-class>
+			org.springframework.web.context.ContextLoaderListener
+		</listener-class>
+	</listener>
+	
+	
+	<!-- la servlet -->
+	<servlet>
+		<servlet-name>sununet</servlet-name>
+		<servlet-class>
+			org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+    	<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<!-- Serves static resource content from .jar files such as spring-js.jar -->
+	<servlet>
+	    <servlet-name>Resource Servlet</servlet-name>
+	    <servlet-class>org.springframework.js.resource.ResourceServlet</servlet-class>
+	</servlet>
+	        
+	<!-- Map all /resources requests to the Resource Servlet for handling -->
+	<servlet-mapping>
+	    <servlet-name>Resource Servlet</servlet-name>
+	    <url-pattern>/resources/*</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- le mapping des url -->
+	<servlet-mapping>
+		<servlet-name>sununet</servlet-name>
+		<url-pattern>*.htm</url-pattern>
+	</servlet-mapping>
+	
+	<!-- le document d'entree -->
+	<welcome-file-list>
+		<welcome-file>/WEB-INF/jsp/acceuil.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<jsp-config>
+	  <taglib>
+	     <taglib-uri>/spring</taglib-uri>
+	     <taglib-location>/WEB-INF/tld/spring-form.tld</taglib-location>
+	  </taglib>
+	</jsp-config>
+	
+</web-app>
