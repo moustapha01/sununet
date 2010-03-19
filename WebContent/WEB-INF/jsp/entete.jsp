@@ -39,14 +39,17 @@
 	}
 </script>
 </head>
-<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" class="tundra spring">
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" class="tundra spring">
 <table width="80%" align="center" border="0" cellspacing="0" cellpadding="0">
+
+  <tr>
+  	<td colspan="3" background="images/headerBg.png">
+  		<br><br><br><br><br>
+  	</td>
+  </tr>
   <tr>
     <td width="20%" valign="top" bgcolor="#FFFFFF">
 	<table width="216" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="216"><a href="#"><img src="images/index_03.jpg" alt="" width="216" height="166" border="0"></a></td>
-      </tr>
       <tr>
         <td background="images/bg_login.gif">
 		<table width="100%" border="0" cellspacing="0" cellpadding="10">
@@ -103,24 +106,23 @@
       </tr>
     </table>
     </td>
-    <td width="2%" bgcolor="#364E1D">&nbsp;</td>
+    <td width="1%" bgcolor="#364E1D">&nbsp;</td>
     
 	<!-- RIGHT SIDE PANEL BEGINS HERE -->
-    <td width="78%" valign="top" bgcolor="#364E1D">
+    <td width="78%" valign="top" class="bodyBg">
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 		  <tr>
 			<td>
-			<table width="700" border="0" cellspacing="5" cellpadding="5">
+			<table border="0" cellspacing="0" cellpadding="0">
 			  <tr>
-				<td class="areaNav" width="140" align="center"><a class="nav" href="index.htm">Acceuil</a></td>
-				<td class="areaNav" width="140" align="center"><a class="nav" href="demandeur.htm">Fiche Demandeur</a></td>
-				<td class="areaNav" width="140" align="center"><a class="nav" href="volontaire.htm">Fiche Volontaire</a></td>
-				<td class="areaNav" width="140" align="center"><a class="nav" href="index.htm">Services</a></td>
-				<td class="areaNav" width="140" align="center"><a class="nav" href="faqs.htm">FAQs</a></td>
-				<td class="areaNav" width="140" align="center"><a class="nav" href="contact.htm">Contacts</a></td>
+				<td align="center"><a href="index.htm"><img border="0" src="images/btnAcceuil.png"/></a></td>
+				<td align="center"><a href="demandeur.htm"><img border="0" src="images/btnDemandeur.png"/></a></td>
+				<td align="center"><a href="volontaire.htm"><img border="0" src="images/btnVolontaire.png"/></a></td>
+				<td align="center"><a href="index.htm"><img border="0" src="images/btnAcceuil.png"/></a></td>
+				<td align="center"><a href="faqs.htm"><img border="0" src="images/btnFaqs.png"/></a></td>
+				<td align="center"><a href="contact.htm"><img border="0" src="images/btnContact.png"/></a></td>
 			  </tr>
 			</table>
-			  <img src="images/index_12bA.jpg"/>
 			</td>
 		  </tr>    
     

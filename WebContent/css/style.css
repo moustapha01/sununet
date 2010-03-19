@@ -1,5 +1,11 @@
 body {
-	background-color: #4a4a4a;
+	background-image: url(../images/bgbox.gif);
+	background-repeat: repeat-x, repeat-y; 
+}
+
+.bodyBg {
+	background-image: url(../images/bgbox.gif);
+	background-repeat: repeat-x, repeat-y; 	
 }
 
 td {
