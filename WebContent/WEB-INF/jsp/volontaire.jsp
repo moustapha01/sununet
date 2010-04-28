@@ -32,7 +32,7 @@
 					<!-- Informations Generales -->
 					<tr>
 						<td colspan="4" align="left" bgcolor="#EFEFEF"><font size="4"
-							color="#C53A4A">Informations Generales</font></td>
+							color="#C53A4A">Informations Générales</font></td>
 					</tr>
 					<tr>
 						<td colspan="4">&nbsp;</td>
@@ -49,7 +49,7 @@
 					</tr>
 					<tr>
 						<td colspan="3"><b>Seriez vous d'accord pour donner de
-						votre temps au Senegal (Administration, ONG)?</b></td>
+						votre temps au Sénégal (Administration, ONG)?</b></td>
 						<td valign="top"><form:radiobuttons path="accord"
 							items="${volontaire.ouiNonOptions}" /> <span class="style1">*</span>
 						<form:errors path="accord" cssClass="error" /></td>
@@ -69,7 +69,7 @@
 					</tr>
 					<tr>
 						<td colspan="3"><b>Dans quel pays souheteriez vous donner
-						votre temps si Senegal, preciser La ville ou region</b></td>
+						votre temps si Sénégal, preciser La ville ou region</b></td>
 						<td valign="top"><form:input id="location" path="location"
 							cssStyle="width:230px" /> <span class="style1">*</span> <form:errors
 							path="location" cssClass="error" /> <script
@@ -168,7 +168,7 @@
 												widgetAttrs : { required : true, invalidMessage : "value is required." }
 											}));   
 										</script></td>
-						<td><b>Telephone</b></td>
+						<td><b>Téléphone</b></td>
 						<td valign="top"><form:input id="telephone" path="telephone" />
 						<form:errors path="telephone" cssClass="error" /> <script
 							type="text/javascript">
@@ -264,14 +264,11 @@
 <table width="80%" align="center" border="0" cellspacing="0"
 	cellpadding="0">
 	<tr>
-
-	</tr>
-	<tr>
-		<td bgcolor="#5C7639">
+		<td>
 		<table width="100%" border="0" cellspacing="0" cellpadding="15">
 			<tr>
-				<td align="center" class="white-text">Copyright © 2008 <b>Busness</b>
-				Company.</td>
+				<td align="center" class="blye-text-regular">Copyright © 2010 <b>RE-SOURCE SUNUNET</b>
+				All rights reserved.</td>
 			</tr>
 		</table>
 		</td>

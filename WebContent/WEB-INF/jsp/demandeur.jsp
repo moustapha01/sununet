@@ -31,15 +31,14 @@
 					cellspacing="0">
 					<tr>
 						<td colspan="4" align="left" bgcolor="#EFEFEF"><font size="4"
-							color="#C53A4A">Informations Generales</font></td>
+							color="#C53A4A">Informations Générales</font></td>
 					</tr>
 					<tr>
 						<td colspan="4">&nbsp;</td>
 					</tr>
 					<tr>
-						<td width="60%" colspan="3"><b>Etes vous une entreprise
-						publique, une ONG, une association, ou une administration
-						territoriale ou nationale senegalaise?</b></td>
+						<td width="60%" colspan="3"><b>Etes-vous une entreprise publique, une ONG, une association,
+						ou une administration territoriale ou nationale sénégalaise?</b></td>
 						<td valign="top"><form:radiobuttons path="organisation"
 							items="${demandeur.ouiNonOptions}" /> <span class="style1">*</span>
 						<form:errors path="organisation" cssClass="error" /></td>
@@ -48,9 +47,8 @@
 						<td colspan="4">&nbsp;</td>
 					</tr>
 					<tr>
-						<td colspan="3"><b>Voudriez vous recevoir l'aide d'un
-						senegalais de la diaspora qui mettra a votre disposition ses
-						competences?</b></td>
+						<td colspan="3"><b>Voudriez vous recevoir l'aide d'un-e senegalais-e de la diaspora qui mettra a
+						votre disposition ses compétences?</b></td>
 						<td valign="top"><form:radiobuttons path="besoinVolontaire"
 							items="${demandeur.ouiNonOptions}" /> <span class="style1">*</span>
 						<form:errors path="besoinVolontaire" cssClass="error" /></td>
@@ -59,8 +57,8 @@
 						<td colspan="4">&nbsp;</td>
 					</tr>					
 					<tr>
-						<td colspan="3"><b>Dans quel domaine souhaiteriez vous
-						obtenir une offre de competence? Quel profil recherchez-vous?</b></td>
+						<td colspan="3"><b>Dans quel domaine souhaiteriez-vous obtenir une offre de compétence?
+						Quel profil recherchez-vous?</b></td>
 						<td valign="top"><form:textarea id="competence"
 							cssStyle="width:230px;" path="competence" /> <span
 							class="style1">*</span> <form:errors path="competence"
@@ -91,10 +89,10 @@
 						<td colspan="4">&nbsp;</td>
 					</tr>					
 					<tr>
-						<td colspan="4"><b>A quel moment de l'annee?</b></td>
+						<td colspan="4"><b>A quel moment de l'année?</b></td>
 					</tr>
 					<tr>
-						<td valign="top">&nbsp;&nbsp;&nbsp;Date de Demarrage</td>
+						<td valign="top">&nbsp;&nbsp;&nbsp;Date de Démarrage</td>
 						<td colspan="3"><form:input id="dateDemarrage" path="dateDemarrage" /> <span
 							class="style1">*</span> <form:errors path="dateDemarrage"
 							cssClass="error" /> <script type="text/javascript">
@@ -105,7 +103,7 @@
 								</script></td>
 					</tr>
 					<tr>
-						<td valign="top">&nbsp;&nbsp;&nbsp;Date de Cloture</td>
+						<td valign="top">&nbsp;&nbsp;&nbsp;Date de Clôture</td>
 						<td colspan="3"><form:input id="dateCloture" path="dateCloture" /> <span
 							class="style1">*</span> <form:errors path="dateCloture"
 							cssClass="error" /> <script type="text/javascript">
@@ -135,7 +133,7 @@
 						<form:errors path="nourriture" cssClass="error" /></td>
 					</tr>
 					<tr>
-						<td>&nbsp;&nbsp;&nbsp;perdiem</td>
+						<td>&nbsp;&nbsp;&nbsp;Per diem</td>
 						<td colspan="3" valign="top"><form:radiobuttons path="perdiem"
 							items="${demandeur.ouiNonOptions}" /> <span class="style1">*</span>
 						<form:errors path="perdiem" cssClass="error" /></td>
@@ -144,8 +142,8 @@
 						<td colspan="4">&nbsp;</td>
 					</tr>					
 					<tr>
-						<td colspan="3" valign="top"><b>Comment souhaiteriez vous utiliser
-						les competences du volontaire? Expliquez si possible</b></td>
+						<td colspan="3" valign="top"><b>Comment souhaiteriez-vous utiliser les compétences du/ de la volontaire?
+						Expliquez si possible</b></td>
 						<td valign="top"><form:textarea id="utilisation"
 							cssStyle="width:230px" path="utilisation" /> <span
 							class="style1">*</span> <form:errors path="utilisation"
@@ -168,7 +166,7 @@
 						<td colspan="4">&nbsp;</td>
 					</tr>							
 					<tr>
-						<td><b>Secteur d'activite</b></td>
+						<td><b>Secteur d'activité</b></td>
 						<td valign="top"><form:input id="secteurActivite"
 							path="secteurActivite" /> <span class="style1">*</span> <form:errors
 							path="secteurActivite" cssClass="error" /> <script
@@ -179,7 +177,7 @@
 										widgetAttrs : { required : true, invalidMessage : "value is required." }
 									}));   
 								</script></td>					
-						<td><b>Nom Societe</b></td>
+						<td><b>Nom Société</b></td>
 						<td valign="top"><form:input id="nomSociete"
 							path="nomSociete" /> <span class="style1">*</span> <form:errors
 							path="nomSociete" cssClass="error" /> <script
@@ -236,7 +234,7 @@
 										widgetAttrs : { required : true, invalidMessage : "value is required." }
 									}));   
 								</script></td>
-						<td><b>telephone</b></td>
+						<td><b>téléphone</b></td>
 						<td valign="top"><form:input id="telephone" path="telephone" />
 						<span class="style1">*</span> <form:errors path="telephone"
 							cssClass="error" /> <script type="text/javascript">
@@ -248,7 +246,7 @@
 								</script></td>																						
 					</tr>
 					<tr>
-						<td><b>Numero Villa (Apt)</b></td>
+						<td><b>Numéro Villa (Apt)</b></td>
 						<td valign="top"><form:input id="addressLigne2"
 							path="addressLigne2" /> <span class="style1">*</span> <form:errors
 							path="addressLigne2" cssClass="error" /> <script
@@ -324,14 +322,11 @@
 <table width="80%" align="center" border="0" cellspacing="0"
 	cellpadding="0">
 	<tr>
-
-	</tr>
-	<tr>
-		<td bgcolor="#5C7639">
+		<td>
 		<table width="100%" border="0" cellspacing="0" cellpadding="15">
 			<tr>
-				<td align="center" class="white-text">Copyright © 2008 <b>Busness</b>
-				Company.</td>
+				<td align="center" class="blye-text-regular">Copyright © 2010 <b>RE-SOURCE SUNUNET</b>
+				All rights reserved.</td>
 			</tr>
 		</table>
 		</td>
