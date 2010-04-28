@@ -74,6 +74,7 @@ public class SelectDemandeur extends MappingSqlQuery{
 		demandeur.setSecteurActivite(rs.getString(DemandeurRow.SECTEUR_ACTIVITE));
 		demandeur.setStatus(rs.getString(DemandeurRow.STATUS));
 		demandeur.setPreview(rs.getBoolean(DemandeurRow.PREVIEW));
+		demandeur.setTelephone(rs.getString(DemandeurRow.TELEPHONE));
 		
 		return demandeur;
 	}

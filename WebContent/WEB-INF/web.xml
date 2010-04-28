@@ -39,7 +39,7 @@
 	<!-- le mapping des url -->
 	<servlet-mapping>
 		<servlet-name>sununet</servlet-name>
-		<url-pattern>*.htm</url-pattern>
+		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
 	
 	<!-- le document d'entree -->

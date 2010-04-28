@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@ page session="false"%>
 <%@ taglib uri="/WEB-INF/c.tld" prefix="c" %>
 
@@ -43,48 +43,51 @@
 <table width="80%" align="center" border="0" cellspacing="0" cellpadding="0">
 
   <tr>
-  	<td colspan="3" background="images/headerBg.png">
-  		<br><br><br><br><br>
+  	<td colspan="3">
+  		<img src="images/headerTitle.gif" />
   	</td>
   </tr>
   <tr>
     <td width="20%" valign="top" bgcolor="#FFFFFF">
-	<table width="216" border="0" cellspacing="0" cellpadding="0">
+    <div class="leftBox">
+	<table border="0" cellspacing="0" cellpadding="0">
+	
+	  <tr>
+	  	<td background="images/bg_login.gif">
+	  		<table >
+		      <tr>
+		          <td colspan="2"><b><br>&nbsp;&nbsp;Enregistrer </b></td>
+		      </tr>
+		      <tr>
+		          <td colspan="2">&nbsp;&nbsp;<input name="textfield" type="text" value="Username"></td>
+		      </tr>
+		      <tr>
+		          <td colspan="2">&nbsp;&nbsp;<input name="textfield" type="text" value="Password"></td>
+		      </tr>
+		      <tr>
+		      	  <td colspan="2">&nbsp;&nbsp;<input type="submit" name="Submit" value="Login"></td>
+		      </tr>	
+		      <tr>
+		      	  <td colspan="2">&nbsp;</td>
+		      </tr>  		
+	  		</table>
+	  	</td>
+	  </tr>
       <tr>
-        <td background="images/bg_login.gif">
-		<table width="100%" border="0" cellspacing="0" cellpadding="10">
-          <tr>
-            <td>
-			<table width="100%" border="0" cellspacing="0" cellpadding="3">
-              <tr>
-                <td colspan="2"><b>Enregistrer </b></td>
-              </tr>
-              <tr>
-                <td colspan="2"><input name="textfield" type="text" value="Username"></td>
-              </tr>
-              <tr>
-                <td width="73%"><input name="textfield" type="text" value="Password"></td>
-                <td width="27%" align="center"><input type="submit" name="Submit" value="Go"></td>
-              </tr>
-            </table>
-			</td>
-          </tr>
-        </table>
-		</td>
+        	<td colspan="2"><br><br></td>
       </tr>
       <tr>
-        <td bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="10">
+        <td colspan="2" bgcolor="#FFFFFF">
+        <table width="100%" border="0" cellspacing="0" cellpadding="10">
           <tr>
             <td><img src="images/index_31.gif" alt=""></td>
           </tr>
           <tr>
-            <td align="center"><img src="images/banking2.jpg" alt=""></td>
-          </tr>
-          <tr>
-            <td><b>APPEL Rejoignez nous et faites l'Histoire</b><br>	
-            	Nous sommes des Senegalais de la diaspora (commercants, employes, restaurateurs, enseignants, ouvriers, chercheurs,
-            	banquiers, expert comptables, artisans, ingenieurs) vivant a l'exterieur du Senegal et voulons nous reunir et
-            	mettre ensemble nos competences et volontes pour contribuer au development de notre pays.
+            <td><b>
+            APPEL Rejoignez nous et faites l'Histoire</b><br>	
+			Nous sommes des Sénégalais-es de la diaspora (commerçants, employés, restaurateurs, enseignants, ouvriers, chercheurs,
+			banquiers, expert comptables, artisans, ingénieurs) vivant a l'extérieur du Sénégal et voulons nous réunir et mettre
+			ensemble nos compétences et volontés pour contribuer au développement de notre pays. 
           </tr>
           <tr>
             <td align="center"><img src="images/index_44.gif" width="185" height="8" alt=""></td>
@@ -93,38 +96,45 @@
             <td><img src="images/index_47.gif" alt=""></td>
           </tr>
           <tr>
-            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-				<td width="6%">&nbsp;</td>
-			  </tr>
-            </table></td>
+            <td>
+	            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	              <tr>
+					<td width="6%">&nbsp;</td>
+				  </tr>
+	            </table>
+            </td>
           </tr>
-        </table></td>
+        </table>
+        </td>
       </tr>
       <tr>
-        <td>&nbsp;</td>
+        <td colspan="2">&nbsp;<br><br><br><br><br><br><br><br><br></td>
       </tr>
     </table>
+    </div>
     </td>
-    <td width="1%" bgcolor="#364E1D">&nbsp;</td>
+    <td width="1%">&nbsp;</td>
     
 	<!-- RIGHT SIDE PANEL BEGINS HERE -->
-    <td width="78%" valign="top" class="bodyBg">
+    <td width="79%" valign="top" class="bodyBg">
+    	<div class="leftBox">
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
 		  <tr>
 			<td>
-			<table border="0" cellspacing="0" cellpadding="0">
+			<table bgcolor="white" border="0" cellspacing="0" cellpadding="0">
 			  <tr>
-				<td align="center"><a href="index.htm"><img border="0" src="images/btnAcceuil.png"/></a></td>
-				<td align="center"><a href="demandeur.htm"><img border="0" src="images/btnDemandeur.png"/></a></td>
-				<td align="center"><a href="volontaire.htm"><img border="0" src="images/btnVolontaire.png"/></a></td>
-				<td align="center"><a href="index.htm"><img border="0" src="images/btnAcceuil.png"/></a></td>
-				<td align="center"><a href="faqs.htm"><img border="0" src="images/btnFaqs.png"/></a></td>
-				<td align="center"><a href="contact.htm"><img border="0" src="images/btnContact.png"/></a></td>
+				<td align="center"><a href="index.do"><img border="0" src="images/btnAcceuil.png"/></a></td>
+				<td align="center"><a href="demandeur.do"><img border="0" src="images/btnDemandeur.png"/></a></td>
+				<td align="center"><a href="volontaire.do"><img border="0" src="images/btnVolontaire.png"/></a></td>
+				<td align="center"><a href="http://www.sununet.com" target="_blank"><img border="0" src="images/btnResource.png"/></a></td>
+				<td align="center"><a href="faqs.do"><img border="0" src="images/btnFaqs.png"/></a></td>
+				<td align="center"><a href="contact.do"><img border="0" src="images/btnContact.png"/></a></td>
+				<td width="45%">&nbsp;</td>
 			  </tr>
 			</table>
 			</td>
-		  </tr>    
+		  </tr>  
+ 
     
     
     

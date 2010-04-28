@@ -16,7 +16,7 @@
 	    		<c:forEach items="${model.volontaireList}" var="volontaire">
 				  <tr height="25px">
 					<td>
-						<a class="orange-text-regular" href="viewvolontaire.htm?id=<c:out value="${volontaire.id}"/>">
+						<a class="orange-text-regular" href="viewvolontaire.do?id=<c:out value="${volontaire.id}"/>">
 							<img alt="ouvrir le document" src="images/page.gif" border="0"/>
 						</a>
 					</td>				  

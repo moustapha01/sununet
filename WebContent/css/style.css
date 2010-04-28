@@ -1,6 +1,7 @@
 body {
-	background-image: url(../images/bgbox.gif);
-	background-repeat: repeat-x, repeat-y; 
+	background-image: url(../images/gradientBg.gif);
+	background-repeat: repeat-x;
+	background-color: #D8E0E7; 
 }
 
 .bodyBg {
@@ -243,7 +244,7 @@ text-decoration: underline;
 {
 	padding: 20px;
 	background-image: url(../images/bgbox.gif);
-	background-repeat: repeat-x; 
+	background-repeat: repeat-x, repeat-y;
 	
 }
 
@@ -264,6 +265,15 @@ text-decoration: underline;
 {
 	background-image: url(../images/gradient.png);
 	background-repeat: repeat-x; 
+}
+
+.leftBox {
+	border-left-color: #D8E0E7;
+	border-top-color: #D8E0E7;
+	border-right-color: #D8E0E7;
+	border-bottom-color: #FFFFFF;
+	border-width: 1px;
+	border-style: solid;
 }
 
 

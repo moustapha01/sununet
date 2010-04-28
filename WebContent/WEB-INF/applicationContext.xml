@@ -25,7 +25,7 @@
   		<property name="url" value="jdbc:mysql://localhost/sununet" /> 
   		<property name="username" value="root" /> 
   		<property name="password" value="tete8282" /> 
-  	</bean>	
+  	</bean>		
 
 	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
 	<property name="host" value="smtp.kattare.com"/>

@@ -111,7 +111,7 @@
 					
 					<A name=question14></A><b>Q14: Nous sommes une ONG, pourrions-nous beneficier de votre service?</b><br>
 					Oui bien sur. Ce projet est construit essentiellement pour les institutions, organisations, associations a but non lucratif.
-					<A href="#question" class="blye"><BR> Haut de page</A><br>		
+					<A href="#question" class="blye"><BR> Haut de page</A><br><br>	
 					
 					<A name=question15></A><b>Q15: Nous sommes une institution publique, pourrions-nous beneficier de vos services?</b><br>
 					Faites la demande. On verra au cas par cas, si c'est possible.

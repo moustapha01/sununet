@@ -69,17 +69,17 @@
 						<table>			          
 				          <tr>
 				          	<td>
-				          		<a class="blye-text-regular" href="demandeurs.htm?type=nouveaux">nouveaux</a>
+				          		<a class="blye-text-regular" href="demandeurs.do?type=nouveaux">nouveaux</a>
 				          	</td>
 				          </tr>			    
 				          <tr>
 				          	<td>
-				          		<a class="blye-text-regular" href="demandeurs.htm?type=existant">existant</a>
+				          		<a class="blye-text-regular" href="demandeurs.do?type=existant">existant</a>
 				          	</td>
 				          </tr>     
 				          <tr>
 				          	<td>
-				          		<a class="blye-text-regular" href="demandeurs.htm?type=expires">expires</a>
+				          		<a class="blye-text-regular" href="demandeurs.do?type=expires">expires</a>
 				          	</td>
 				          </tr>
 			     	 	</table>	
@@ -103,7 +103,7 @@
 						<table>			          
 				          <tr>
 				          	<td>
-				          		<a class="blye-text-regular" href="volontaires.htm">les volontaires</a>
+				          		<a class="blye-text-regular" href="volontaires.do">les volontaires</a>
 				          	</td>
 				          </tr>			    
 			     	 	</table>	

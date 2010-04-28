@@ -170,10 +170,14 @@
 	       	
 		   	    <tr>
 			        <td colspan="2" align="center">
-						<form style="padding: 0px;" method="post" action="approverdemandeur.htm">
+			        	<c:if test="${model.demandeur.status == 'pending'}">
+						<form name="approveForm" style="padding: 0px;" method="post" action="approverdemandeur.do">
 							<input type="hidden" name="id" value="<c:out value="${model.demandeur.id}"/>" />
-							<input type="submit" value="Approver"/>
-						</form>							
+							<a href="javascript:document.approveForm<c:out value="${demandeur.id}"/>.submit();">
+								<img alt="preview" src="images/btnApprover.png" border="0"/>
+							</a>								
+						</form>	
+						</c:if>						
 			        </td>
 		        </tr>
 			</table>

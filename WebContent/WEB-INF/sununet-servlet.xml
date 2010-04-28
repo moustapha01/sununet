@@ -8,20 +8,20 @@
 	<bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
 		<property name="mappings">
 			<props>
-				<prop key="/volontaire.htm">volontaireFormController</prop>
-				<prop key="/demandeur.htm">demandeurFormController</prop>
-				<prop key="/contact.htm">contactFormController</prop>
-				<prop key="/index.htm">acceuilController</prop>
-				<prop key="/confirmation.htm">sununetController</prop>
-				<prop key="/annonces.htm">annoncesController</prop>
-				<prop key="/admin.htm">sununetController</prop>
-				<prop key="/faqs.htm">sununetController</prop>
-				<prop key="/viewdemandeur.htm">sununetController</prop>
-				<prop key="/viewvolontaire.htm">sununetController</prop>
-				<prop key="/demandeurs.htm">sununetController</prop>
-				<prop key="/volontaires.htm">sununetController</prop>
-				<prop key="/approverdemandeur.htm">sununetController</prop>
-				<prop key="/previewdemandeur.htm">sununetController</prop>
+				<prop key="/volontaire.do">volontaireFormController</prop>
+				<prop key="/demandeur.do">demandeurFormController</prop>
+				<prop key="/contact.do">contactFormController</prop>
+				<prop key="/index.do">acceuilController</prop>
+				<prop key="/confirmation.do">sununetController</prop>
+				<prop key="/annonces.do">annoncesController</prop>
+				<prop key="/admin.do">sununetController</prop>
+				<prop key="/faqs.do">sununetController</prop>
+				<prop key="/viewdemandeur.do">sununetController</prop>
+				<prop key="/viewvolontaire.do">sununetController</prop>
+				<prop key="/demandeurs.do">sununetController</prop>
+				<prop key="/volontaires.do">sununetController</prop>
+				<prop key="/approverdemandeur.do">sununetController</prop>
+				<prop key="/previewdemandeur.do">sununetController</prop>
 			</props>
 		</property>
 	</bean>
@@ -34,7 +34,7 @@
             <bean class="com.sununet.service.VolontaireValidator"/>
         </property>
         <property name="formView" value="volontaire"/>
-        <property name="successView" value="confirmation.htm"/>
+        <property name="successView" value="confirmation.do"/>
         <property name="sununetService" ref="sununetService"/>
 		<property name="synchronizeOnSession">                               
     		<value>true</value>
@@ -49,7 +49,7 @@
              <bean class="com.sununet.service.DemandeurValidator"/> 
         </property>
         <property name="formView" value="demandeur"/>
-        <property name="successView" value="confirmation.htm"/>
+        <property name="successView" value="confirmation.do"/>
         <property name="sununetService" ref="sununetService"/>
         <property name="emailNotificationService" ref="emailNotificationService"/>
 		<property name="synchronizeOnSession">                               
@@ -65,7 +65,7 @@
              <bean class="com.sununet.service.ContactValidator"/> 
         </property>
         <property name="formView" value="contact"/>
-        <property name="successView" value="confirmation.htm"/>
+        <property name="successView" value="confirmation.do"/>
         <property name="emailNotificationService" ref="emailNotificationService"/>
 		<property name="synchronizeOnSession">                               
     		<value>true</value>
@@ -80,15 +80,15 @@
 	<bean id="sununetControllerResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
 		<property name="mappings">
 		<props>
-			<prop key="/demandeurs.htm">getAllDemandeurs</prop>
-			<prop key="/volontaires.htm">getAllVolontaires</prop>
-			<prop key="/admin.htm">getAllDemandeurs</prop>
-			<prop key="/faqs.htm">gotoFaqs</prop>
-			<prop key="/viewdemandeur.htm">getDemandeur</prop>
-			<prop key="/viewvolontaire.htm">getVolontaire</prop>
-			<prop key="/approverdemandeur.htm">approveDemandeur</prop>
-			<prop key="/previewdemandeur.htm">previewDemandeur</prop>
-			<prop key="/confirmation.htm">gotoConfirmation</prop>
+			<prop key="/demandeurs.do">getAllDemandeurs</prop>
+			<prop key="/volontaires.do">getAllVolontaires</prop>
+			<prop key="/admin.do">getAllDemandeurs</prop>
+			<prop key="/faqs.do">gotoFaqs</prop>
+			<prop key="/viewdemandeur.do">getDemandeur</prop>
+			<prop key="/viewvolontaire.do">getVolontaire</prop>
+			<prop key="/approverdemandeur.do">approveDemandeur</prop>
+			<prop key="/previewdemandeur.do">previewDemandeur</prop>
+			<prop key="/confirmation.do">gotoConfirmation</prop>
 		</props>
 		</property>
 	</bean>

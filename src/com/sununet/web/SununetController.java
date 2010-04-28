@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
 
+import sun.security.action.GetBooleanAction;
+
 import com.sununet.domain.Demandeur;
 import com.sununet.domain.Volontaire;
 import com.sununet.service.ISununetService;
@@ -66,7 +68,13 @@ public class SununetController extends MultiActionController {
 			throws Exception {
 
 		Demandeur demandeur = this.getDemandeurById(req);
-		demandeur.setPreview(true);
+		String flag = req.getParameter("previewFlag");
+		if(flag.equalsIgnoreCase("true"))
+			demandeur.setPreview(true);
+		else
+			demandeur.setPreview(false);
+		
+		System.out.println(demandeur.isPreview());
 		sununetService.modifyDemandeur(demandeur);
 		List<Demandeur> demandeurList = sununetService.getDemandeurByStatus("pending");
 		return getResolvedView("admindemandeur", "demandeurList", demandeurList);	
